@@ -1,7 +1,8 @@
 $(document).ready(function(){
 	// initialize jquery
 	$('.button-collapse').sideNav();
-	$('ul.tabs').tabs({ swipeable: true});
+	//$('ul.tabs').tabs({ swipeable: true});
+	$('ul.tabs').tabs({ 'swipeable': true});
 	//$('.parallax').parallax();
 });
 
