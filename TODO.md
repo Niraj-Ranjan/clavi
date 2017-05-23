@@ -13,5 +13,5 @@
 ### User interface
 
 * [ ] Dashboard
-* [ ] Other things
-
+* [ ] Create Server Repository
+* [ ] Create Server
