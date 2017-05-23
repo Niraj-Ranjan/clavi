@@ -21,8 +21,8 @@
 * [ ] Class Admin panel
   * [ ] Notice board management
 * [ ] Login interface
-  * [ ] Login for Student
-  * [ ] Login for staff/admins
+  * [x] Login for Student
+  * [x] ~~Login for staff/admins~~ Login would select approprite permissions based on username
   * [ ] Password recovery
   * [ ] Account management like password change
 * [ ] Application admin panel
