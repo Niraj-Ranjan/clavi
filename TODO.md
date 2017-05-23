@@ -24,8 +24,7 @@
   * [ ] Login for Student
   * [ ] Login for staff/admins
   * [ ] Password recovery
-  
-  
+  * [ ] Account management like password change
 * [ ] Application admin panel
   * [ ] Users management
 
