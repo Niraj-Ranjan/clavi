@@ -7,8 +7,8 @@
 * Chat room
 * All features of [Student Diary](http://get.app.url)
 * Notice board
-* * Departmental
-* * Events
+  * Departmental
+  * Events
  
 ### User interface
 
