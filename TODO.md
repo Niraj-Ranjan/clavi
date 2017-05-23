@@ -19,7 +19,15 @@
 * [ ] Chat page
 * [ ] Chat admin panel
 * [ ] Class Admin panel
+  * [ ] Notice board management
 * [ ] Login interface
+  * [ ] Login for Student
+  * [ ] Login for staff/admins
+  * [ ] Password recovery
+  
+  
+* [ ] Application admin panel
+  * [ ] Users management
 
 ### Backend
 
