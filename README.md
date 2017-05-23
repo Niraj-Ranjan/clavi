@@ -1,5 +1,6 @@
 # Welcome
 
+This is an all-in-one college management app.
 
 ### Used tools:
 
@@ -10,9 +11,7 @@
 
 ***
 
-# TODO List
-
-### Ideas
+## Ideas
 
 * Canteen booking
 * Exam papers
@@ -24,7 +23,18 @@
 * Class schedule
 * Fees payment
 * Salary (for staff)
- 
+* Send mail??
+
+## Things to ponder
+
+* Should all logic be in one script or they should be split according to function like, canteen.js, login.js? Likewise for css as well.
+* Should mail sending facility be added or not?
+* Should personal notes and organizer be added for student like a diary or organizer app?
+
+***
+
+# TODO List
+
 ### User interface
 
 * [ ] Dashboard
@@ -37,9 +47,10 @@
   * [ ] Attendance
   * [ ] Marks
   * [ ] Course registration
-* [ ] Chat room selection page
-* [ ] Chat page
-* [ ] Chat admin panel
+* [ ] Forum
+  * [ ] Chat room selection
+  * [ ] Chat page
+  * [ ] Chat admin panel
 * [ ] Class Admin panel
   * [ ] Notice board management
 * [x] **Login interface**
@@ -49,6 +60,7 @@
 * [ ] Account management like password change
 * [ ] Application admin panel
   * [ ] Users management
+* [ ] Canteen Admin Panel
 * [ ] 404 page
 * [ ] Payments using [UPI](https://en.wikipedia.org/wiki/Unified_Payments_Interface) or [PayTM](http://paytm.com)
 
