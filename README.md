@@ -44,7 +44,7 @@
   * [ ] Notice board management
 * [x] **Login interface**
   * [x] **Login for Student**
-  * [x] ~~**Login for staff/admins**~~ _Login would select approprite permissions based on username_
+  * [x] ~~**Login for staff/admins**~~ _Login would select apropriate permissions based on username_
   * [x] **Password recovery** _Added as a popout menu in login page_
 * [ ] Account management like password change
 * [ ] Application admin panel
