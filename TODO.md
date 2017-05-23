@@ -5,7 +5,7 @@
 * Canteen booking
 * Exam papers
 * Chat room
-* All features of [Student Diary](http://get.app.url)
+* All features of [Student Diary](https://play.google.com/store/apps/details?id=com.iitms.sdraisoni)
 * Notice board
   * Departmental
   * Events
@@ -15,6 +15,13 @@
 * [ ] Dashboard
 * [ ] Canteen page
 * [ ] Paper download page
+* [ ] Student Diary pages
+  * [ ] Student Profile
+    * [ ] Personal details
+	* [ ] Teaching plan
+  * [ ] Attendance
+  * [ ] Marks
+  * [ ] course registration
 * [ ] Chat room selection page
 * [ ] Chat page
 * [ ] Chat admin panel
@@ -27,6 +34,7 @@
   * [ ] Account management like password change
 * [ ] Application admin panel
   * [ ] Users management
+* [ ] 404 page
 
 ### Backend
 
