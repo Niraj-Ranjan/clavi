@@ -41,7 +41,7 @@ This is an all-in-one college management app.
 * [ ] Canteen page
   * [ ] Cart page
   * [ ] Checkout
-    *[ ] Location info field
+    * [ ] Location info field
 * [ ] Paper download page
 * [ ] Student Diary pages
   * [ ] Student Profile
