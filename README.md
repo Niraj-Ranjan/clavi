@@ -39,6 +39,9 @@ This is an all-in-one college management app.
 
 * [ ] Dashboard
 * [ ] Canteen page
+  * [ ] Cart page
+  * [ ] Checkout
+    *[ ] Location info field
 * [ ] Paper download page
 * [ ] Student Diary pages
   * [ ] Student Profile
@@ -71,3 +74,7 @@ This is an all-in-one college management app.
 * [ ] Database for college info (Student Diary)
 * [ ] College info server
 * [ ] Chat server
+
+### Bugs
+
+* [ ] The categories view on canteen page is not showing complete cards; only image is visible
