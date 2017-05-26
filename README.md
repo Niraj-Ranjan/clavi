@@ -8,6 +8,7 @@ This is an all-in-one college management app.
 * Front-end Framework: [Materialize](http://materializecss.com)
 * Cross-platform Framework: [Phonegap](http://phonegap.com/)
 * Build: [Adobe Phonegap Build](https://build.phonegap.com/)
+* Server: [NodeJS](https://nodejs.org/)
 
 ***
 
