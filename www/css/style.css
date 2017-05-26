@@ -44,3 +44,9 @@
 #password-reset-box {
 	display: none;
 }
+
+
+.profile-picture {
+	height: auto;
+	width: 200px;
+}

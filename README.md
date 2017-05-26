@@ -48,7 +48,7 @@ This is an all-in-one college management app.
 * [ ] Paper download page
 * [ ] Student Diary pages
   * [ ] Student Profile
-    * [ ] Personal details
+    * [x] **Personal details**
 	* [ ] Teaching plan
   * [ ] Attendance
   * [ ] Marks
