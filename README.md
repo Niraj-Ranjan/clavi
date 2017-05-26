@@ -37,6 +37,7 @@ This is an all-in-one college management app.
 
 ### User interface
 
+* [ ] Navigation bar and Panel - _needs to be updated with links_
 * [ ] Dashboard
 * [ ] Canteen page
   * [ ] Cart page
@@ -64,7 +65,7 @@ This is an all-in-one college management app.
 * [ ] Application admin panel
   * [ ] Users management
 * [ ] Canteen Admin Panel
-* [ ] 404 page
+* [x] 404 page
 * [ ] Payments using [UPI](https://en.wikipedia.org/wiki/Unified_Payments_Interface) or [PayTM](http://paytm.com)
 
 ### Backend
