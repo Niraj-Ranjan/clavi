@@ -40,9 +40,11 @@ This is an all-in-one college management app.
 * [ ] Navigation bar and Panel - _needs to be updated with links_
 * [ ] Dashboard
 * [ ] Canteen page
+  * [ ] Item order form
+    * [ ] Quantity
+	* [ ] Delivery location - if delivery will be given; otherwise not needed
   * [ ] Cart page
   * [ ] Checkout
-    * [ ] Location info field
 * [ ] Paper download page
 * [ ] Student Diary pages
   * [ ] Student Profile
@@ -75,6 +77,8 @@ This is an all-in-one college management app.
 * [ ] Database for college info (Student Diary)
 * [ ] College info server
 * [ ] Chat server
+* [ ] Shopping cart manager
+* [ ] Papers directory management service
 
 ### Bugs
 
