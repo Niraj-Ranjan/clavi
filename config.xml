@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.dayshmookh.fertilityadvisor" version="0.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.dayshmookh.bhandapp" version="0.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
 	<name>Bhand App</name>
 	<description>
 		This is just the beginning.
@@ -7,7 +7,7 @@
 	<author email="krushndayshmookh@gmail.com" href="http://www.dayshmookh.com">
 		Dayshmookh Apps
 	</author>
-	<content src="index.html" />
+	<content src="pages/login.html" />
 	<preference name="DisallowOverscroll" value="true" />
 	<preference name="android-minSdkVersion" value="14" />
 	<plugin name="cordova-plugin-battery-status" source="npm" spec="~1.1.1" />
