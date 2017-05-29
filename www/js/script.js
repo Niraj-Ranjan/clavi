@@ -32,7 +32,7 @@ $("#sign-in-btn").click(function () {
 		uname: $("#username").val(),
 		pword: $("#password").val()
 	}
-	$.get("192.168.225.42:3000/trial", user, function (data) {
+	$.get("http://192.168.225.42:3000/trial", user, function (data) {
 		console.log(data);
 		$("#sign-in-btn").html(data)
 	});
