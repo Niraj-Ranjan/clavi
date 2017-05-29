@@ -50,3 +50,17 @@
 	height: auto;
 	width: 200px;
 }
+
+.loading-flashing {
+    animation: loading-flash 1s infinite alternate;
+
+}
+
+@keyframes loading-flash {
+    0% {
+        color: white;
+    }
+    100% {
+        color: red;
+    }
+}
