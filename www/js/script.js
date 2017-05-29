@@ -25,3 +25,15 @@ $("#reset-cancel-btn").click(function () {
 	$("#login-box").slideDown();
 	$("#password-reset-box").slideUp();
 });
+
+
+$("#sign-in-btn").click(function () {
+	user = {
+		uname: $("#username").val(),
+		pword: $("#password").val()
+	}
+	$.get("192.168.225.42:3000/trial", user, function (data) {
+		console.log(data);
+		$("#sign-in-btn").html(data)
+	});
+})
