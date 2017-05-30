@@ -2,37 +2,59 @@ $(document).ready(function () {
 	// initialize jquery
 	$('.button-collapse').sideNav();
 
-	/*$('ul.tabs').tabs({
+	/*
+	$('ul.tabs').tabs({
 		swipeable: true
-	});*/
+	});
+	*/
 	$('ul.tabs').tabs();
 	//$('.parallax').parallax();
 	/*
 		$('.carousel.carousel-slider').carousel({
 			fullWidth: true
 		});
-		$('.carousel').carousel();*/
+		$('.carousel').carousel();
+	*/
 });
 
+/*
+function setCookie(cname, cvalue, exdays) {
+	var d = new Date();
+	d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+	var expires = "expires=" + d.toUTCString();
+	document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
 
-$("#reset-box-btn").click(function () {
-	$("#login-box").slideUp();
-	$("#password-reset-box").slideDown();
-	console.log("hi")
-});
-
-$("#reset-cancel-btn").click(function () {
-	$("#login-box").slideDown();
-	$("#password-reset-box").slideUp();
-});
-
-
-$("#sign-in-btn").click(function () {
-	user = {
-		uname: $("#username").val(),
-		pword: $("#password").val()
+function getCookie(cname) {
+	var name = cname + "=";
+	var decodedCookie = decodeURIComponent(document.cookie);
+	var ca = decodedCookie.split(';');
+	for (var i = 0; i < ca.length; i++) {
+		var c = ca[i];
+		while (c.charAt(0) == ' ') {
+			c = c.substring(1);
+		}
+		if (c.indexOf(name) == 0) {
+			return c.substring(name.length, c.length);
+		}
 	}
-	$.get("http://localhost:3000/trial", user, function (data) {
-		console.log(data);
-	});
-})
+	return "";
+}
+
+function checkCookie() {
+	var username = getCookie("username");
+	if (username != "") {
+		alert("Welcome again " + username);
+	} else {
+		username = prompt("Please enter your name:", "");
+		if (username != "" && username != null) {
+			setCookie("username", username, 365);
+		}
+	}
+}
+*/
+
+$("#logout-btn").click(function () {
+	Cookies.remove('username');
+	window.location = "./pages/login.html";
+});
