@@ -58,3 +58,8 @@ $("#logout-btn").click(function () {
 	Cookies.remove('username');
 	window.location = "./pages/login.html";
 });
+
+
+// ============ CONFIG ========
+
+const hostaddress = "http://192.168.225.68:3000";

@@ -14,7 +14,7 @@ $("#sign-in-btn").click(function () {
 		uname: $("#username").val(),
 		pword: $("#password").val()
 	}
-	$.get("http://localhost:3000/login", user, function (data) {
+	$.get( hostaddress + "/login", user, function (data) {
 		console.log(data);
 		if (data == "true") {
 			Cookies.set('username', user.uname, {
