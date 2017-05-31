@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.dayshmookh.bhandapp" version="0.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-	<name>Bhand App</name>
+<widget id="com.dayshmookh.clavi" version="0.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+	<name>Clavi</name>
 	<description>
-		This is just the beginning.
+		View your class in your palm.
 	</description>
 	<author email="krushndayshmookh@gmail.com" href="http://www.dayshmookh.com">
 		Dayshmookh Apps
