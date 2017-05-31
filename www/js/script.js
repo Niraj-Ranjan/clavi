@@ -60,6 +60,6 @@ $("#logout-btn").click(function () {
 });
 
 
-// ============ CONFIG ========
 
 const hostaddress = "http://192.168.225.68:3000";
+
