@@ -68,13 +68,13 @@ This is an all-in-one college management app.
 * [ ] Application admin panel
   * [ ] Users management
 * [ ] Canteen Admin Panel
-* [x] 404 page
+* [x] **404 page**
 * [ ] Payments using [UPI](https://en.wikipedia.org/wiki/Unified_Payments_Interface) or [PayTM](http://paytm.com)
 
 ### Backend
 
-* [ ] Create Server Repository
-* [ ] Create Web Server
+* [x] **Create Server Repository**
+* [x] **Create Web Server**
 * [ ] Database for college info (Student Diary)
 * [ ] College info server
 * [ ] Chat server
