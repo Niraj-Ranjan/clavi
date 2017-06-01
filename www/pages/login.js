@@ -14,14 +14,24 @@ $("#sign-in-btn").click(function () {
 		uname: $("#username").val(),
 		pword: $("#password").val()
 	}
-	$.get( hostaddress + "/login", user, function (data) {
+	$.get(hostaddress + "/login", user, function (data) {
 		console.log(data);
 		if (data == "true") {
 			Cookies.set('username', user.uname, {
 				expires: 7,
 				path: '/'
 			});
+
+			$.get(hostaddress + "/username-name", {
+				user: user.uname
+			}, function (returnedusername) {
+				Cookies.set("username-name", returnedusername, {
+					expires: 7,
+					path: '/'
+				});
+			});
 			window.location = "../home.html";
+
 		} else if (data == "false") {
 			alert("Password Incorrect.");
 		} else {

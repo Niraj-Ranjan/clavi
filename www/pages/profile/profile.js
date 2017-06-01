@@ -5,7 +5,7 @@ $(document).ready(function () {
 	$.get(hostaddress + "/userdata", {
 		username: uname
 	}, function (data) {
-		console.log(data);
+		//console.log(data);
 		for (term in data) {
 
 			//field = "#"+term;
