@@ -1,3 +1,3 @@
 var loggeduser = Cookies.get('username-name');
 console.log(loggeduser);
-alert("Welcome " + loggeduser + "!");
+Materialize.toast("Welcome " + loggeduser + "!", 5000);
