@@ -1,17 +1,16 @@
 var uname = Cookies.get("username");
-//console.log(uname);
+
 
 $(document).ready(function () {
 	$.get(hostaddress + "/userdata", {
 		username: uname
 	}, function (data) {
-		//console.log(data);
+		innerdata = "";
 		for (term in data) {
-
-			//field = "#"+term;
-			//console.log(field);
-			document.getElementById(term).innerHTML = data[term];
+			innerdata = innerdata.concat("<tr><td class='strong'>" + term + "</td><td>" + data[term] + "</td></tr>");
 		}
+		//console.log(innerdata);
+		document.getElementById("info-table-body").innerHTML = innerdata;
 		//document.getElementById("user-img").setAttribute("src", data["user-img"]);
 	});
 });

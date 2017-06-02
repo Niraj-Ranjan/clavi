@@ -29,8 +29,9 @@ $("#sign-in-btn").click(function () {
 					expires: 7,
 					path: '/'
 				});
+				window.location = "../home.html";
 			});
-			window.location = "../home.html";
+
 
 		} else if (data == "false") {
 			alert("Password Incorrect.");

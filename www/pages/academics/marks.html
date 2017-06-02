@@ -2,25 +2,26 @@
 <html>
 
 <head>
+
+
 	<title>Marks</title>
 
+	<!-- -------------------- META ------------------------------------------- -->
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
+	<!-- -------------------- FONT ------------------------------------------- -->
 
-	<link type="text/css" rel="stylesheet" href="../../css/materialize.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-
+	<!-- -------------------- CSS ------------------------------------------- -->
+	<link type="text/css" rel="stylesheet" href="../../css/materialize.css">
 	<link type="text/css" rel="stylesheet" href="../../css/style.css">
 
-
+	<!-- -------------------- SCRIPTS ------------------------------------------- -->
 	<script type="text/javascript" src="../../js/jquery-1.10.2.js"></script>
 	<script type="text/javascript" src="../../js/materialize.js"></script>
-
-
-
+	<script type="text/javascript" src="../../js/js.cookie.js"></script>
 
 
 </head>
@@ -39,21 +40,26 @@
 			<a href="#!" class="brand-logo">Marks</a>
 			<a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
 			<ul class="right hide-on-med-and-down">
-				<li class="waves-effect"><a href="#">Home</a></li>
-				<li class="waves-effect"><a href="#">Page</a></li>
-				<li class="waves-effect"><a href="#">Page</a></li>
-				<li class="waves-effect"><a href="#">Page</a></li>
-				<li class="waves-effect"><a href="#">Page</a></li>
-				<li class="waves-effect"><a href="#">Page</a></li>
+				<li class="waves-effect"><a href="../../home.html">Home</a></li>
+				<li class="waves-effect"><a href="../profile/index.html">Profile</a></li>
+				<li class="waves-effect"><a href="../academics/index.html">Academics</a></li>
+				<li class="waves-effect"><a href="../canteen/index.html">Canteen</a></li>
+				<li class="waves-effect"><a href="../forum/index.html">Forum</a></li>
+
+				<li class="waves-effect"><a href="#" class="logout-btn">Logout</a></li>
 			</ul>
 			<ul class="side-nav" id="mobile-menu">
-				<li class="side-nav-header full-width green lighten-2"><a href="#">#TODO:Header</a></li>
-				<li class="waves-effect full-width"><a href="../../home.html">Home</a></li>
-				<li class="waves-effect full-width"><a href="#">Page</a></li>
-				<li class="waves-effect full-width"><a href="#">Page</a></li>
-				<li class="waves-effect full-width"><a href="#">Page</a></li>
-				<li class="waves-effect full-width"><a href="#">Page</a></li>
-				<li class="waves-effect full-width"><a href="#">Page</a></li>
+				<li class="side-nav-header full-width green lighten-2"><a href="#" id="side-nav-head">Clavi</a></li>
+				<li class="side-nav-header full-width green lighten-2">
+					<a href="#" id="user-greeter"></a>
+				</li>
+				<li class="waves-effect full-width"><a href="home.html">Home</a></li>
+				<li class="waves-effect full-width"><a href="../profile/index.html">Profile</a></li>
+				<li class="waves-effect full-width"><a href="../academics/index.html">Academics</a></li>
+				<li class="waves-effect full-width"><a href="../canteen/index.html">Canteen</a></li>
+				<li class="waves-effect full-width"><a href="../forum/index.html">Forum</a></li>
+
+				<li class="waves-effect full-width"><a href="#" class="logout-btn">Logout</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -69,18 +75,10 @@
 
 
 	<!-- -------------------- CONTENT ------------------------------------------- -->
-
 	<div class="container">
-		<div>
-
-
-
-
-		</div>
+		<h1 class="center">Hello</h1>
 
 	</div>
-
-
 	<!-- -------------------- CONTENT ------------------------------------------- -->
 
 
@@ -102,8 +100,8 @@
 	<!-- ---------------------------SCRIPTS----------------------------------- -->
 
 
-	<script type="text/javascript" src="../../js/script.js"></script>
-
+	<script type="text/javascript" src="../../js/script.js" id="global-script"></script>
+	<script type="text/javascript" src="marks.js"></script>
 
 
 

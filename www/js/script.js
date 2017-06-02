@@ -69,10 +69,12 @@ $(document).ready(function () {
 
 // ================ Global Functions ================
 
-$("#logout-btn").click(function () {
+$(".logout-btn").click(function () {
 	Cookies.remove('username');
 	Cookies.remove('username-name');
-	window.location = "./pages/login.html";
+	//console.log(document.getElementById("global-script").getAttribute("src"));
+	window.location = $("#global-script").attr("src").replace("js/script.js", "pages/login.html");
+
 });
 
 
