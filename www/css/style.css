@@ -78,3 +78,8 @@ nav .nav-wrapper .side-nav li a {
 	height: 20px;
 	/*background: red;*/
 }
+
+.one-subject td {
+	border: 1px solid #555555;
+	border-collapse: collapse;
+}
