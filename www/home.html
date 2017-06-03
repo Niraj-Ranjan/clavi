@@ -49,10 +49,12 @@
 				<li class="waves-effect"><a href="#" class="logout-btn">Logout</a></li>
 			</ul>
 			<ul class="side-nav" id="mobile-menu">
+
 				<li class="side-nav-header full-width green lighten-2"><a href="#" id="side-nav-head">Clavi</a></li>
 				<li class="side-nav-header full-width green lighten-2">
 					<a href="#" id="user-greeter"></a>
 				</li>
+
 				<li class="waves-effect full-width"><a href="home.html">Home</a></li>
 				<li class="waves-effect full-width"><a href="pages/profile/index.html">Profile</a></li>
 				<li class="waves-effect full-width"><a href="pages/academics/index.html">Academics</a></li>
@@ -82,54 +84,46 @@
 
 		<div class="row">
 
-
-
-
 			<div class="col s12 m3 push-m9 card collection hide-on-small-only">
-
 				<h5 class="center">Notifications</h5>
 
-
 				<div class="col s12 collection-item">
-
 					<p class="strong center">General</p>
 					<div class="full-width" id="notification-general-notices">
-
 					</div>
 				</div>
 
 				<div class="col s12 collection-item">
 					<p class="strong center">Departmental</p>
 					<div class="full-width" id="notification-departmental-notices">
-
 					</div>
-
 				</div>
+
 				<div class="col s12 collection-item">
 					<p class="strong center">Events</p>
 					<div class="full-width" id="notification-general-events">
-
 					</div>
 					<div class="full-width" id="notification-departmental-events">
-
 					</div>
-
 				</div>
 
-
-
 				<a class="btn right btn-flat" href="#">View All</a>
-
-
 
 			</div>
 
 
 			<div class="col s12 m9 pull-m3 row">
+
+
 				<div class="col s12 hide-on-med-and-up center">
-					<a href="#" class="btn waves-effect waves-teal white teal-text full-width">Notifications<i class="material-icons right">launch</i></a>
+					<!-- Notification Modal Trigger -->
+					<a href="#notification-modal" class="btn waves-effect waves-teal white teal-text full-width">Notifications<i class="material-icons right">launch</i></a>
 				</div>
-				<div class="col s12 white-text">This is empty space.</div>
+
+
+				<div class="col s12 white-text hide-on-med-and-up">This is empty space.</div>
+
+
 				<div class="col s6 m4">
 					<div class="card">
 						<div class="card-image tiny">
@@ -216,6 +210,47 @@
 
 		</div>
 	</div>
+
+
+
+
+
+	<!-- Notification Modal Structure -->
+	<div id="notification-modal" class="modal bottom-sheet">
+		<div class="modal-content">
+			<h4>Notifications</h4>
+			<div class="col s12 collection">
+
+
+				<div class="col s12 collection-item">
+					<p class="strong center">General</p>
+					<div class="full-width" id="notification-small-general-notices">
+					</div>
+				</div>
+
+				<div class="col s12 collection-item">
+					<p class="strong center">Departmental</p>
+					<div class="full-width" id="notification-small-departmental-notices">
+					</div>
+				</div>
+
+				<div class="col s12 collection-item">
+					<p class="strong center">Events</p>
+					<div class="full-width" id="notification-small-general-events">
+					</div>
+					<div class="full-width" id="notification-small-departmental-events">
+					</div>
+				</div>
+
+
+
+			</div>
+		</div>
+		<div class="modal-footer">
+			<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+		</div>
+	</div>
+
 	<!-- -------------------- CONTENT ------------------------------------------- -->
 
 

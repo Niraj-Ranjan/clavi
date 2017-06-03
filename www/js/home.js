@@ -27,6 +27,7 @@ function getNotifications(type, section) {
 			}
 			//console.log(noticelist);
 			document.getElementById("notification-" + type + "-" + section).innerHTML = noticelist;
+			document.getElementById("notification-small-" + type + "-" + section).innerHTML = noticelist;
 		}
 	});
 }
