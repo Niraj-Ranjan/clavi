@@ -38,8 +38,8 @@ This is an all-in-one college management app.
 
 ### User interface
 
-* [ ] Navigation bar and Panel - _needs to be updated with links_
-* [ ] Dashboard
+* [x] **Navigation bar and Panel** - _needs to be updated with links_
+* [x] **Dashboard**
 * [ ] Canteen page
   * [ ] Item order form
     * [ ] Quantity
@@ -48,11 +48,9 @@ This is an all-in-one college management app.
   * [ ] Checkout
 * [ ] Paper download page
 * [ ] Student Diary pages
-  * [ ] Student Profile
-    * [x] **Personal details**
-	* [ ] Teaching plan
-  * [ ] Attendance
-  * [ ] Marks
+  * [x] **Personal details**
+  * [x] **Attendance**
+  * [x] **Marks**
   * [ ] Course registration
 * [ ] Forum
   * [ ] Chat room selection

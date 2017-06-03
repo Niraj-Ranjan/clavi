@@ -69,3 +69,17 @@ nav .nav-wrapper .side-nav li a {
 	font-size: 2em;
 	font-weight: 300;
 }
+
+.strong {
+	font-weight: 500;
+}
+
+.graph-bar {
+	height: 20px;
+	/*background: red;*/
+}
+
+.one-subject td {
+	border: 1px solid #555555;
+	border-collapse: collapse;
+}
