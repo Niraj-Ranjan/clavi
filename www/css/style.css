@@ -73,3 +73,8 @@ nav .nav-wrapper .side-nav li a {
 .strong {
 	font-weight: 500;
 }
+
+.graph-bar {
+	height: 20px;
+	/*background: red;*/
+}
