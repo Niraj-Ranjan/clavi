@@ -1,3 +1,5 @@
+var lastpath = Cookies.get("lastpath");
+
 function showFolder(folderpath) {
 	$.get(paperhostaddress + "/papers", {
 		path: folderpath
@@ -5,7 +7,7 @@ function showFolder(folderpath) {
 		var folderdata = "";
 		var filedata = "";
 		for (folder in data.dirs) {
-			folderdata = folderdata.concat("<div class='col s6 m3 l3'><a class='col s12 btn btn-large truncate blue accent-3' onclick='showFolder(" + '"' + data.path + "/" + data.dirs[folder] + '")' + "'>" + "<i class='material-icons left'>folder</i>" + data.dirs[folder] + "</a></div>");
+			folderdata = folderdata.concat("<div class='col s6 m4 l3'><a class='col s12 btn btn-large truncate blue accent-3' onclick='showFolder(" + '"' + data.path + "/" + data.dirs[folder] + '")' + "'>" + "<i class='material-icons left'>folder</i>" + data.dirs[folder] + "</a></div>");
 		}
 		for (file in data.files) {
 			filedata = filedata.concat("<div class='col s12 m6 l4'><a class='col s12 btn btn-large truncate blue darken-4' href='" + paperhostaddress + data.path + "/" + data.files[file] + "'>" + "<i class='material-icons left'>insert_drive_file</i>" + data.files[file] + "</a></div>");
@@ -14,7 +16,10 @@ function showFolder(folderpath) {
 		document.getElementById("file-manager-container-folder").innerHTML = folderdata;
 		document.getElementById("file-manager-container-file").innerHTML = filedata;
 
-
+		Cookies.set('lastpath', data.path, {
+			expires: 7,
+			path: '/'
+		});
 		//console.log(folderpath);
 		var folderarray = folderpath.split("/");
 		//console.log(folderarray);
@@ -33,4 +38,9 @@ function showFolder(folderpath) {
 	});
 }
 
-showFolder("");
+
+if (lastpath != undefined) {
+	showFolder(lastpath);
+} else {
+	showFolder("");
+}
