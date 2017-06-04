@@ -1,6 +1,6 @@
 // ================ CONFIGURATION ================
 const hostaddress = "http://192.168.225.68:3000";
-
+const paperhostaddress = "http://192.168.225.68:3040";
 
 
 

@@ -4,7 +4,7 @@
 <head>
 
 
-	<title>Exam</title>
+	<title>Exam Papers</title>
 
 	<!-- -------------------- META ------------------------------------------- -->
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
@@ -24,6 +24,26 @@
 	<script type="text/javascript" src="../../js/js.cookie.js"></script>
 
 
+	<style>
+		.breadcrumb {
+			color: #64b5f6;
+		}
+
+		.breadcrumb::before {
+			color: #64b5f6;
+		}
+
+		.breadcrumb:last-child {
+			color: #1e88e5;
+		}
+
+		.breadcrumb:hover {
+			color: #1e88e5;
+		}
+
+	</style>
+
+
 </head>
 
 <body>
@@ -37,7 +57,7 @@
 	<!-- ----------------------------NAVBAR----------------------------------- -->
 	<nav class="fixed">
 		<div class="nav-wrapper blue darken-2">
-			<a href="#!" class="brand-logo">Exam</a>
+			<a href="#!" class="brand-logo">Exam Papers</a>
 			<a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
 			<ul class="right hide-on-med-and-down">
 				<li class="waves-effect"><a href="../../home.html">Home</a></li>
@@ -76,8 +96,25 @@
 
 	<!-- -------------------- CONTENT ------------------------------------------- -->
 	<div class="container">
-		<h1 class="center">Hello</h1>
+		<h4 class="center">Browse the files</h4>
+		<div class="row">
+			<nav class="transparent">
+				<div class="nav-wrapper">
+					<div class="col s12 blue-text text-darken-3" id="path-breadcrumb-container">
+						<a href="#!" class="breadcrumb">First</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div id="file-manager-container">
+			<div id="file-manager-container-folder" class="row">
+				<p class="center">Loading</p>
+			</div>
+			<div id="file-manager-container-file" class="row"></div>
 
+
+
+		</div>
 	</div>
 	<!-- -------------------- CONTENT ------------------------------------------- -->
 
