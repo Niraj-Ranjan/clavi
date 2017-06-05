@@ -46,7 +46,7 @@ This is an all-in-one college management app.
 	* [ ] Delivery location - if delivery will be given; otherwise not needed
   * [ ] Cart page
   * [ ] Checkout
-* [ ] Paper download page
+* [x] **Paper download page**
 * [ ] Student Diary pages
   * [x] **Personal details**
   * [x] **Attendance**
@@ -68,6 +68,7 @@ This is an all-in-one college management app.
 * [ ] Canteen Admin Panel
 * [x] **404 page**
 * [ ] Payments using [UPI](https://en.wikipedia.org/wiki/Unified_Payments_Interface) or [PayTM](http://paytm.com)
+* [ ] IEEE
 
 ### Backend
 
