@@ -1,5 +1,7 @@
 # Welcome
 
+> Your academic assistant.
+
 This is an all-in-one college management app.
 
 ### Used tools:
