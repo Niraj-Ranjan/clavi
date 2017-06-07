@@ -22,6 +22,12 @@
     <script type="text/javascript" src="../../js/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="../../js/materialize.js"></script>
     <script type="text/javascript" src="../../js/js.cookie.js"></script>
+    <script>
+        if (Cookies.get('username') == undefined) {
+            window.location = "../login.html";
+        }
+
+    </script>
 
 
 </head>
@@ -81,7 +87,10 @@
     <!-- -------------------- CONTENT ------------------------------------------- -->
     <div class="container">
         <h4 class="center">Forum</h4>
-        <p class="center">Coming Soon!</p>
+        <h5 class="center">Select channel</h5>
+        <div class="row">
+            <a href="chat.html" class="col s12 btn green btn-large center">#general</a>
+        </div>
 
 
     </div>

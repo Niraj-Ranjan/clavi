@@ -1,6 +1,7 @@
 // ================ CONFIGURATION ================
 const hostaddress = "http://127.0.0.1:3000";
 const paperhostaddress = "http://127.0.0.1:3040";
+const chathostaddress = "http://127.0.0.1:3050";
 
 
 
