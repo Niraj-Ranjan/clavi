@@ -1,6 +1,6 @@
 // ================ CONFIGURATION ================
 
-const ipaddress = "http://localhost" + ":";
+const ipaddress = "http://192.168.225.68" + ":";
 
 const hostaddress = ipaddress + "3000";
 const paperhostaddress = ipaddress + "3040";
