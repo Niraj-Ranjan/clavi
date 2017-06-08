@@ -12,7 +12,7 @@ $.get(datahostaddress + "/rates", function (rates) {
                 //console.log(rates[category]);
                 var itemname = availableitems[category][item];
                 //console.log(itemname);
-                innerdata = innerdata.concat("<div class='col s6 m3'><div class='card'><div class='card-image tiny'><img src='" + datahostaddress + "/canteen/images/" + category + "/" + itemname + ".png'><span class='card-title text-shadow'>" + itemname + "</span></div><div class='card-action'><a href='#'>Rs. " + rates[category][itemname] + "</a></div></div></div>");
+                innerdata = innerdata.concat("<div class='col s6 m3'><div class='card'><div class='card-image tiny'><img src='" + datahostaddress + "/canteen/images/" + category + "/" + itemname + ".png'><span class='card-title text-shadow truncate'>" + itemname + "</span></div><div class='card-action'><a href='#'>Rs. " + rates[category][itemname] + "</a></div></div></div>");
             }
             //console.log(category);
             document.getElementById(category).innerHTML = innerdata;
@@ -32,7 +32,7 @@ $.get(datahostaddress + "/rates", function (rates) {
             //console.log(rates[category]);
             var itemcategory = trendingitems[itemname];
             //console.log(itemname);
-            innerdata = innerdata.concat("<div class='col s6 m3'><div class='card'><div class='card-image tiny'><img src='" + datahostaddress + "/canteen/images/" + itemcategory + "/" + itemname + ".png'><span class='card-title text-shadow'>" + itemname + "</span></div><div class='card-action'><a href='#'>Rs. " + rates[itemcategory][itemname] + "</a></div></div></div>");
+            innerdata = innerdata.concat("<div class='col s6 m3'><div class='card'><div class='card-image tiny'><img src='" + datahostaddress + "/canteen/images/" + itemcategory + "/" + itemname + ".png'><span class='card-title text-shadow truncate'>" + itemname + "</span></div><div class='card-action'><a href='#'>Rs. " + rates[itemcategory][itemname] + "</a></div></div></div>");
             //console.log(itemcategory);
             //console.log(rates[itemcategory]);
             //console.log(category);
