@@ -1,8 +1,10 @@
 // ================ CONFIGURATION ================
 
-const ipaddress = "http://192.168.225.68" + ":";
+const ipaddress = "http://192.168.225.68" + ":"; // use for testing app on device
+//const ipaddress = "http://localhost" + ":"; // use for testing app on pc
 
 const hostaddress = ipaddress + "3000";
+const datahostaddress = ipaddress + "3030";
 const paperhostaddress = ipaddress + "3040";
 const chathostaddress = ipaddress + "3050";
 
