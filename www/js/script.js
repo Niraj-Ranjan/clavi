@@ -1,9 +1,11 @@
 // ================ CONFIGURATION ================
 
-const ipaddress = "http://192.168.225.68" + ":"; // use for testing app on device
+//const ipaddress = "http://192.168.225.68" + ":"; // use for testing app on device
 //const ipaddress = "http://localhost" + ":"; // use for testing app on pc
+//const hostaddress = ipaddress + "3000";
 
-const hostaddress = ipaddress + "3000";
+
+const hostaddress = "http://clavi.herokuapp.com";
 
 /*
 const datahostaddress = ipaddress + "3030";
