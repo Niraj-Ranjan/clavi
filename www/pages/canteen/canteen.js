@@ -23,9 +23,9 @@ function writetotal() {
 
 
 
-$.get(datahostaddress + "/rates", function (rates) {
+$.get(hostaddress + "/rates", function (rates) {
     //console.log(rates);
-    $.get(datahostaddress + "/canteen/data/available.json", function (availableitems) {
+    $.get(hostaddress + "/canteen/data/available.json", function (availableitems) {
         //console.log(availableitems);
         for (var category in availableitems) {
             var innerdata = "";
@@ -37,7 +37,7 @@ $.get(datahostaddress + "/rates", function (rates) {
                 //console.log(rates[category]);
                 var itemname = availableitems[category][item];
                 //console.log(itemname);
-                var imagelink = datahostaddress + "/canteen/images/" + category + "/" + itemname + ".png";
+                var imagelink = hostaddress + "/canteen/images/" + category + "/" + itemname + ".png";
                 innerdata = innerdata.concat("<div class='col s6 m3'><div class='card'><div class='card-image tiny'><img src='" + imagelink + "'><span class='card-title text-shadow truncate'>" + itemname + "</span></div><div class='card-action'><a onclick='orderthis(" + '"' + itemname + '"' + "," + rates[category][itemname] + "," + '"' + imagelink + '"' + ")'>Rs. " + rates[category][itemname] + "</a></div></div></div>");
             }
             //console.log(category);
@@ -45,7 +45,7 @@ $.get(datahostaddress + "/rates", function (rates) {
         }
 
     });
-    $.get(datahostaddress + "/canteen/data/trending.json", function (trendingitems) {
+    $.get(hostaddress + "/canteen/data/trending.json", function (trendingitems) {
         //console.log(availableitems);
         var innerdata = "";
         for (var itemname in trendingitems) {
@@ -58,7 +58,7 @@ $.get(datahostaddress + "/rates", function (rates) {
             //console.log(rates[category]);
             var itemcategory = trendingitems[itemname];
             //console.log(itemname);
-            var imagelink = datahostaddress + "/canteen/images/" + itemcategory + "/" + itemname + ".png";
+            var imagelink = hostaddress + "/canteen/images/" + itemcategory + "/" + itemname + ".png";
 
 
             innerdata = innerdata.concat("<div class='col s6 m3'><div class='card'><div class='card-image tiny'><img src='" + imagelink + "'><span class='card-title text-shadow truncate'>" + itemname + "</span></div><div class='card-action'><a onclick='orderthis(" + '"' + itemname + '"' + "," + rates[itemcategory][itemname] + "," + '"' + imagelink + '"' + ")'>Rs. " + rates[itemcategory][itemname] + "</a></div></div></div>");

@@ -1,7 +1,7 @@
 var lastpath = Cookies.get("lastpath");
 
 function showFolder(folderpath) {
-	$.get(paperhostaddress + "/papers", {
+	$.get(hostaddress + "/papers", {
 		path: folderpath
 	}, function (data) {
 		var folderdata = "";
@@ -10,7 +10,7 @@ function showFolder(folderpath) {
 			folderdata = folderdata.concat("<div class='col s6 m4 l3'><a class='col s12 btn btn-large truncate blue accent-3' onclick='showFolder(" + '"' + data.path + "/" + data.dirs[folder] + '")' + "'>" + "<i class='material-icons left'>folder</i>" + data.dirs[folder] + "</a></div>");
 		}
 		for (file in data.files) {
-			filedata = filedata.concat("<div class='col s12 m6 l4'><a class='col s12 btn btn-large truncate blue darken-4' href='" + paperhostaddress + data.path + "/" + data.files[file] + "'>" + "<i class='material-icons left'>insert_drive_file</i>" + data.files[file] + "</a></div>");
+			filedata = filedata.concat("<div class='col s12 m6 l4'><a class='col s12 btn btn-large truncate blue darken-4' href='" + hostaddress + data.path + "/" + data.files[file] + "'>" + "<i class='material-icons left'>insert_drive_file</i>" + data.files[file] + "</a></div>");
 		}
 
 		document.getElementById("file-manager-container-folder").innerHTML = folderdata;
