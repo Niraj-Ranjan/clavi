@@ -1,4 +1,6 @@
-function orderthis(item, rate, imagelink) {
+var orderobject = {};
+
+function orderthis(item, itemcategory, rate, imagelink) {
     document.getElementById("modal-item-name").innerHTML = item;
     document.getElementById("modal-rate").innerHTML = rate;
     document.getElementById("modal-image").setAttribute("src", imagelink);
@@ -6,11 +8,44 @@ function orderthis(item, rate, imagelink) {
     $("#order-quantity").val(1);
     $("#order-quantity").focus();
     writetotal();
+
+    orderobject = {
+        item: item,
+        category: itemcategory,
+        username: Cookies.get("username")
+    };
+
 }
 
-$("#order-quantity").change(function () {
-    writetotal();
-})
+
+function ordersend(itemconfirm) {
+
+    orderobject.quantity = parseInt($("#order-quantity").val(), 10);
+    if (orderobject.item == itemconfirm) {
+        //console.log(orderobject);
+
+
+        $.get(hostaddress + "/canteen/order", orderobject, function (returnedstring) {
+            if (returnedstring == "success") {
+                $("#order-modal").modal('close');
+                Materialize.toast("Order for " + orderobject.quantity + " " + orderobject.item + " sent!", 3000);
+
+            } else {
+                $("#order-modal").modal('close');
+                Materialize.toast("Order failed!", 3000);
+            }
+        });
+    }
+}
+
+$("#submit-order-btn").click(function () {
+    var confirmationName = document.getElementById("modal-item-name").innerHTML;
+    ordersend(confirmationName);
+});
+
+
+
+
 
 function writetotal() {
     var rate = parseInt(document.getElementById("modal-rate").innerHTML, 10);
@@ -20,6 +55,17 @@ function writetotal() {
     //alert("r " + rate + " q " + quantity + " t " + totalamount);
     document.getElementById("total-amount").innerHTML = totalamount;
 }
+
+
+$("#order-quantity").change(function () {
+    writetotal();
+});
+
+
+
+
+
+
 
 
 
@@ -38,7 +84,7 @@ $.get(hostaddress + "/rates", function (rates) {
                 var itemname = availableitems[category][item];
                 //console.log(itemname);
                 var imagelink = hostaddress + "/canteen/images/" + category + "/" + itemname + ".png";
-                innerdata = innerdata.concat("<div class='col s6 m3'><div class='card'><div class='card-image tiny'><img src='" + imagelink + "'><span class='card-title text-shadow truncate'>" + itemname + "</span></div><div class='card-action'><a onclick='orderthis(" + '"' + itemname + '"' + "," + rates[category][itemname] + "," + '"' + imagelink + '"' + ")'>Rs. " + rates[category][itemname] + "</a></div></div></div>");
+                innerdata = innerdata.concat("<div class='col s6 m3'><div class='card'><div class='card-image tiny'><img src='" + imagelink + "'><span class='card-title text-shadow truncate'>" + itemname + "</span></div><div class='card-action'><a href='#!' onclick='orderthis(" + '"' + itemname + '"' + "," + '"' + category + '"' + "," + rates[category][itemname] + "," + '"' + imagelink + '"' + ")'>Rs. " + rates[category][itemname] + "</a></div></div></div>");
             }
             //console.log(category);
             document.getElementById(category).innerHTML = innerdata;
@@ -61,7 +107,7 @@ $.get(hostaddress + "/rates", function (rates) {
             var imagelink = hostaddress + "/canteen/images/" + itemcategory + "/" + itemname + ".png";
 
 
-            innerdata = innerdata.concat("<div class='col s6 m3'><div class='card'><div class='card-image tiny'><img src='" + imagelink + "'><span class='card-title text-shadow truncate'>" + itemname + "</span></div><div class='card-action'><a onclick='orderthis(" + '"' + itemname + '"' + "," + rates[itemcategory][itemname] + "," + '"' + imagelink + '"' + ")'>Rs. " + rates[itemcategory][itemname] + "</a></div></div></div>");
+            innerdata = innerdata.concat("<div class='col s6 m3'><div class='card'><div class='card-image tiny'><img src='" + imagelink + "'><span class='card-title text-shadow truncate'>" + itemname + "</span></div><div class='card-action'><a href='#!' onclick='orderthis(" + '"' + itemname + '"' + "," + '"' + itemcategory + '"' + "," + rates[itemcategory][itemname] + "," + '"' + imagelink + '"' + ")'>Rs. " + rates[itemcategory][itemname] + "</a></div></div></div>");
             //console.log(itemcategory);
             //console.log(rates[itemcategory]);
             //console.log(category);
