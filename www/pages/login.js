@@ -10,36 +10,36 @@ $("#reset-cancel-btn").click(function () {
 });
 
 $("#sign-in-btn").click(function () {
-    user = {
+    var user = {
         uname: $("#username").val(),
         pword: $("#password").val()
-    }
+    };
     $.get(hostaddress + "/login", user, function (data) {
         //console.log(data);
-        if (data == "true") {
-            Cookies.set('username', user.uname, {
-                expires: 7,
-                path: '/'
-            });
+        if (data != "invalid") {
+            if (data != "false") {
+                Cookies.set('username', user.uname, {
+                    expires: 7,
+                    path: '/'
+                });
 
-            $.get(hostaddress + "/username-name", {
-                user: user.uname
-            }, function (returnedusername) {
-                Cookies.set("username-name", returnedusername, {
+
+                Cookies.set("username-name", data.name, {
                     expires: 7,
                     path: '/'
                 });
                 window.location = "../home.html";
-            });
 
 
-        } else if (data == "false") {
-            alert("Password Incorrect.");
+            } else {
+                alert("Password Incorrect.");
+            }
         } else {
-            alert("Sorry, " + user.uname + " not found.")
+            alert("Sorry, " + user.uname + " not found.");
         }
+
     });
-})
+});
 
 $("#reset-cancel-btn").click(function () {
     $("#login-box").slideDown();
@@ -60,4 +60,4 @@ $("#reset-btn").click(function () {
             alert("Sorry, e-mail not found. Try again.");
         }
     });
-})
+});
