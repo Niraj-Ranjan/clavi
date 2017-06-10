@@ -63,3 +63,8 @@ $("#reset-btn").click(function () {
         hideWait();
     });
 });
+
+$(document).ready(function(){
+    hideWait();
+});
+hideWait();
