@@ -42,46 +42,47 @@ This is an all-in-one college management app.
 
 * [x] **Navigation bar and Panel** - _needs to be updated with links_
 * [x] **Dashboard**
-* [ ] Canteen page
-  * [ ] Item order form
-    * [ ] Quantity
-	* [ ] Delivery location - if delivery will be given; otherwise not needed
-  * [ ] Cart page
-  * [ ] Checkout
+* [x] **Canteen page**
+  * [x] **Item order form**
+    * [x] **Quantity**
+	* [x] ~~Delivery location - if delivery will be given; otherwise not needed~~ - _will be thought out later_
+  * [x] **Cart page**
+  * [x] ~~Checkout~~ - _will be added later with payment_
 * [x] **Paper download page**
-* [ ] Student Diary pages
+* [x] **Student Diary pages**
   * [x] **Personal details**
   * [x] **Attendance**
   * [x] **Marks**
-  * [ ] Course registration
-* [ ] Forum
-  * [ ] Chat room selection
-  * [ ] Chat page
-  * [ ] Chat admin panel
-* [ ] Class Admin panel
-  * [ ] Notice board management
+  * [x] ~~Course registration~~ - _requires support from college_
+* [x] **Forum**
+  * [x] **Chat room selection**
+  * [x] **Chat page** - _currently only general chat is available. Private may or may not be added_
+  * [x] ~~Chat admin panel~~ - _not required right now. will be added as needed_
+* [x] ~~Class Admin panel~~ - _moved to admin tasks on server_
+  * [x] ~~Notice board management~~ _moved to admin tasks on server_
 * [x] **Login interface**
   * [x] **Login for Student**
   * [x] ~~**Login for staff/admins**~~ _Login would select apropriate permissions based on username_
   * [x] **Password recovery** _Added as a popout menu in login page_
-* [ ] Account management like password change
-* [ ] Application admin panel
-  * [ ] Users management
-* [ ] Canteen Admin Panel
+* [x] ~~Account management like password change~~ - _not requred right now_
+* [x] ~~Application admin panel~~ _moved to admin tasks on server_
+  * [x] ~~Users management~~ _moved to admin tasks on server_
+* [x] ~~Canteen Admin Panel~~ _moved to admin tasks on server_
 * [x] **404 page**
-* [ ] Payments using [UPI](https://en.wikipedia.org/wiki/Unified_Payments_Interface) or [PayTM](http://paytm.com)
+* [x] ~~Payments using [UPI](https://en.wikipedia.org/wiki/Unified_Payments_Interface) or [PayTM](http://paytm.com)~~ - _will be added after approval from college_
 * [ ] IEEE
 
 ### Backend
+_this section is to be moved to server repository readme_
 
 * [x] **Create Server Repository**
 * [x] **Create Web Server**
-* [ ] Database for college info (Student Diary)
-* [ ] College info server
-* [ ] Chat server
-* [ ] Shopping cart manager
-* [ ] Papers directory management service
+* [x] **Database for college info (Student Diary)**
+* [x] **College info server**
+* [x] **Chat server**
+* [x] **Shopping cart manager**
+* [x] **Papers directory management service**
 
 ### Bugs
 
-* [ ] The categories view on canteen page is not showing complete cards; only image is visible
+* [x] **The categories view on canteen page is not showing complete cards; only image is visible** - _removed swipe to fix it_
