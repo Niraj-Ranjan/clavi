@@ -1,11 +1,12 @@
 function getorders() {
+    showWait();
     $.get(hostaddress + "/canteen/myorders", {
         username: Cookies.get("username")
     }, function (returneddata) {
         if (returneddata != "failure") {
             var openorders = "";
             var closedorders = "";
-            for (item in returneddata) {
+            for (var item in returneddata) {
 
                 var datetime = new Date(returneddata[item].time);
                 var orderdate = datetime.getDate() + "-" + (datetime.getMonth() + 1);
@@ -19,19 +20,15 @@ function getorders() {
                     closedorders = ("<div class='collection-item row'><div class='col s2'>" + orderdate + "<br><span class='grey-text'>" + ordertime + "</span></div><div class='col s4'>" + returneddata[item].item + "<br><span class='grey-text'>" + returneddata[item].category + "</span></div><div class='col s2'>" + returneddata[item].quantity + "</div><div class='col s2'>" + returneddata[item].rate + "</div><div class='col s2 strong'>" + orderamount + "</div></div>").concat(closedorders);
                 }
             }
-            //console.log(openorders);
-            // console.log(closedorders);
 
             document.getElementById("current-orders-container").innerHTML = openorders;
             document.getElementById("closed-orders-container").innerHTML = closedorders;
-            // console.log(returneddata);
-
-            //Materialize.toast("Order for " + orderobject.quantity + " " + orderobject.item + " sent!", 3000);
 
         } else {
 
             Materialize.toast("Get failed!", 3000);
         }
+        hideWait();
     });
 }
 
@@ -45,6 +42,7 @@ $("#refresh-btn").click(function () {
 });
 
 $("#clear-btn").click(function () {
+    showWait();
     if (confirm("Are you sure you want to clear history?")) {
         $.get(hostaddress + "/canteen/myorders/clear", {
             username: Cookies.get("username")
@@ -54,6 +52,7 @@ $("#clear-btn").click(function () {
             } else {
                 Materialize.toast("Failed to clear!", 3000);
             }
+            hideWait();
         });
     }
 });

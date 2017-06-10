@@ -2,6 +2,7 @@ var uname = Cookies.get("username");
 
 
 function getAcademics() {
+    showWait();
     $.get(hostaddress + "/academics", {
         username: uname
     }, function (academicsdata) {
@@ -32,7 +33,7 @@ function getAcademics() {
         //console.log(innerdata);
         document.getElementById("marks-table-container").innerHTML = finalinnerdata;
 
-
+        hideWait();
 
         //console.log(total);
         //console.log(attendanceLength);

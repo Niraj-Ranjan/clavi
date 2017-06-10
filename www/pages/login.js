@@ -10,6 +10,7 @@ $("#reset-cancel-btn").click(function () {
 });
 
 $("#sign-in-btn").click(function () {
+    showWait();
     var user = {
         uname: $("#username").val(),
         pword: $("#password").val()
@@ -37,7 +38,7 @@ $("#sign-in-btn").click(function () {
         } else {
             alert("Sorry, " + user.uname + " not found.");
         }
-
+        hideWait();
     });
 });
 
@@ -47,7 +48,7 @@ $("#reset-cancel-btn").click(function () {
 });
 
 $("#reset-btn").click(function () {
-
+    showWait();
     $.get(hostaddress + "/passwordreset", {
         email: $("#reset-email").val()
     }, function (data) {
@@ -59,5 +60,6 @@ $("#reset-btn").click(function () {
         } else {
             alert("Sorry, e-mail not found. Try again.");
         }
+        hideWait();
     });
 });
