@@ -4,16 +4,18 @@ var loggeduser = Cookies.get('username-name');
 $(document).ready(function () {
     Materialize.toast("Welcome " + loggeduser + "!", 3000);
     getAllNotifications();
+    // hideWait();
+    var firstuse = Cookies.get("firstuse");
+    if (firstuse == undefined) {
+        Cookies.set("firstuse", "false", {
+            expires: 108,
+            path: '/'
+        });
+        $('#menu-btn-tap-target').tapTarget('open');
+    }
 });
 
-var firstuse = Cookies.get("firstuse");
-if (firstuse == undefined) {
-    Cookies.set("firstuse", "false", {
-        expires: 108,
-        path: '/'
-    });
-    $('#menu-btn-tap-target').tapTarget('open');
-}
+
 
 
 
@@ -25,9 +27,9 @@ function getNotifications(type, section) {
         type: type
     }, function (notifications) {
         noticelist = "";
-        for (notice in notifications[section]) {
+        for (var notice in notifications[section]) {
 
-            for (x in notifications[section][notice]) {
+            for (var x in notifications[section][notice]) {
                 noticelist = noticelist.concat("<a href='" + notifications[section][notice][x] + "'>" + x + "</a><br>");
                 //console.log(x);
 

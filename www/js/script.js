@@ -1,22 +1,9 @@
 // ================ CONFIGURATION ================
 
-//const ipaddress = "http://192.168.225.68" + ":"; // use for testing app on device
-//const ipaddress = "http://localhost" + ":"; // use for testing app on pc
-//const hostaddress = ipaddress + "3000";
 
 
 const hostaddress = "http://clavi.herokuapp.com";
-
-/*
-const datahostaddress = ipaddress + "3030";
-const paperhostaddress = ipaddress + "3040";
-const chathostaddress = ipaddress + "3050";
-
-*/
-const datahostaddress = hostaddress;
-const paperhostaddress = hostaddress;
-const chathostaddress = hostaddress;
-
+//const hostaddress = "http://192.168.225.68:3000";
 
 
 
@@ -58,6 +45,8 @@ $(document).ready(function () {
 
     document.getElementById("user-greeter").innerHTML = Cookies.get("username-name");
 
+    hideWait();
+
 });
 
 // ===================================================
@@ -68,11 +57,24 @@ $(document).ready(function () {
 // ================ Local Functions ================
 
 
+function addWaitingOverlay() {
+    var innerdata = '<div id="waiting-overlay" class="screen-unit valign-wrapper"><div class="container center"><div class="preloader-wrapper big active"><div class="spinner-layer spinner-blue"><div class="circle-clipper left"><div class="circle"></div></div><div class="gap-patch"><div class="circle"></div></div><div class="circle-clipper right"><div class="circle"></div></div></div><div class="spinner-layer spinner-red"><div class="circle-clipper left"><div class="circle"></div></div><div class="gap-patch"><div class="circle"></div></div><div class="circle-clipper right"><div class="circle"></div></div></div><div class="spinner-layer spinner-yellow"><div class="circle-clipper left"><div class="circle"></div></div><div class="gap-patch"><div class="circle"></div></div><div class="circle-clipper right"><div class="circle"></div></div></div><div class="spinner-layer spinner-green"><div class="circle-clipper left"><div class="circle"></div></div><div class="gap-patch"><div class="circle"></div></div><div class="circle-clipper right"><div class="circle"></div></div></div></div></div></div>';
 
+    var waitContainer = document.createElement("div");
+    waitContainer.innerHTML = innerdata;
 
+    document.getElementsByTagName("body")[0].appendChild(waitContainer);
+}
 
+function showWait() {
+    $("#waiting-overlay").removeClass("hide");
+}
 
+function hideWait() {
+    $("#waiting-overlay").addClass("hide");
+}
 
+addWaitingOverlay();
 
 
 // ===================================================
