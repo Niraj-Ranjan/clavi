@@ -42,8 +42,9 @@ $("#refresh-btn").click(function () {
 });
 
 $("#clear-btn").click(function () {
-    showWait();
+
     if (confirm("Are you sure you want to clear history?")) {
+        showWait();
         $.get(hostaddress + "/canteen/myorders/clear", {
             username: Cookies.get("username")
         }, function (returnedstring) {
