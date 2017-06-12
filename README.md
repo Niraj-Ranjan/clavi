@@ -4,6 +4,8 @@
 
 This is an all-in-one college management app.
 
+[Download now!](https://build.phonegap.com/apps/2640917)
+
 ### Used tools:
 
 * Code Editor: [Brackets](http://brackets.io) and [Intel XDK](https://software.intel.com/en-us/intel-xdk)
