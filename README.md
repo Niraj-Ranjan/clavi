@@ -70,7 +70,7 @@ This is an all-in-one college management app.
 * [x] ~~Canteen Admin Panel~~ _moved to admin tasks on server_
 * [x] **404 page**
 * [x] ~~Payments using [UPI](https://en.wikipedia.org/wiki/Unified_Payments_Interface) or [PayTM](http://paytm.com)~~ - _will be added after approval from college_
-* [ ] IEEE
+* [x] **IEEE**
 
 ### Backend
 _this section is to be moved to server repository readme_
