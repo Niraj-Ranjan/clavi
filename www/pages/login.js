@@ -15,7 +15,8 @@ $("#sign-in-btn").click(function () {
         uname: $("#username").val(),
         pword: $("#password").val()
     };
-    $.get(hostaddress + "/login", user, function (data) {
+
+    $.post(hostaddress + "/login", user, function (data) {
         //console.log(data);
         if (data != "invalid") {
             if (data != "false") {
@@ -34,6 +35,8 @@ $("#sign-in-btn").click(function () {
 
             } else {
                 alert("Password Incorrect.");
+                $("#password").val("");
+                $("#password").focus();
             }
         } else {
             alert("Sorry, " + user.uname + " not found.");
@@ -49,7 +52,7 @@ $("#reset-cancel-btn").click(function () {
 
 $("#reset-btn").click(function () {
     showWait();
-    $.get(hostaddress + "/passwordreset", {
+    $.post(hostaddress + "/passwordreset", {
         email: $("#reset-email").val()
     }, function (data) {
         //console.log(data);
@@ -64,7 +67,7 @@ $("#reset-btn").click(function () {
     });
 });
 
-$(document).ready(function(){
+$(document).ready(function () {
     hideWait();
 });
 hideWait();
