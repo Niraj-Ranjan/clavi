@@ -2,7 +2,7 @@
 
 
 
-const hostaddress = "http://clavi.herokuapp.com";
+var hostaddress = "http://clavi.herokuapp.com";
 //const hostaddress = "http://192.168.225.68:3000";
 
 
