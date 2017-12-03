@@ -6,14 +6,19 @@
     <description>
         Your academic assistant.
     </description>
+    
     <author email="krushndayshmookh@gmail.com" href="http://www.dayshmookh.com">
         Dayshmookh Apps
     </author>
 
     <content src="index.html" />
 
+    <preference name='phonegap-version' value='cli-7.0.1' />
+    
     <preference name="DisallowOverscroll" value="true" />
+    
     <preference name="android-minSdkVersion" value="14" />
+    
     <plugin name="cordova-plugin-console" source="npm" spec="~1.0.2" />
     <plugin name="cordova-plugin-battery-status" source="npm" spec="~1.1.1" />
     <plugin name="cordova-plugin-camera" source="npm" spec="~2.1.1" />
@@ -57,9 +62,9 @@
     </platform>
 
     <access origin="*" />
+    
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
-
     <allow-intent href="mailto:*" />
 
 </widget>
