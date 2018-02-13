@@ -74,6 +74,10 @@ This is an all-in-one college management app.
 * [x] ~~Payments using [UPI](https://en.wikipedia.org/wiki/Unified_Payments_Interface) or [PayTM](http://paytm.com)~~ - _will be added after approval from college_
 * [x] **IEEE**
 
+### SIH 2018
+
+* [ ] 
+
 ### Backend
 _this section is to be moved to server repository readme_
 

@@ -24,13 +24,7 @@
     <script type="text/javascript" src="js/js.cookie.js"></script>
 
 
-    <script>
-        hideWait();
-        if (Cookies.get('username') == undefined) {
-            window.location = "pages/login.html";
-        }
-
-    </script>
+    
 
 
 </head>
@@ -293,7 +287,13 @@
     <script type="text/javascript" src="js/script.js" id="global-script"></script>
     <script type="text/javascript" src="js/home.js"></script>
 
+    <script>
+        hideWait();
+        if (Cookies.get('username') == undefined) {
+            window.location = "pages/login.html";
+        }
 
+    </script>
 
 
 
