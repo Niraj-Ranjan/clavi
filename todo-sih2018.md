@@ -19,11 +19,11 @@
     * [ ] class timetable
     * [ ] Exam timetable
     * [ ] Event timings
+    * [ ] Pending dues reminder (!)
   * [ ] Library book return reminder
   * [ ] Notification popups for mobile systems
-* [ ] Student details
+* [ ] Student details view
   * [ ] Personal details
-  * [ ] Student location tracker (?)
   * [ ] Document Cloud storage
 * [ ] Exam papers and solutions
 
@@ -32,13 +32,12 @@
 
 * [ ] Academics display
   * [ ] Attendance
-  * [ ] smart attendance tracker
   * [ ] Marks
-  * [ ] Marks improvement notifier
   * [ ] Results
 * [ ] Academics entry
   * [ ] Attendance entry
   * [ ] Marks entry
+  * [ ] Assignment posting
 * [ ] Notifications display
   * [ ] Events
   * [ ] Circulars
@@ -59,7 +58,6 @@
 
 * [ ] Canteen
   * [ ] Item order form
-  * [ ] Delivery location  (?)
   * [ ] Cart page
     * [ ] Checkout
 * [ ] Forum
@@ -77,26 +75,17 @@
 
 
 
-### Administrative Pages
+
+### DTE Administrative Pages
 
 * [ ] Academics display
   * [ ] Attendance
-  * [ ] smart attendance tracker
   * [ ] Marks
-  * [ ] Marks improvement notifier
   * [ ] Results
-* [ ] Notifications display and entry
-  * [ ] Events
-  * [ ] Circulars
-  * [ ] Schedules
-    * [ ] class timetable
-    * [ ] Exam timetable
-    * [ ] Event timings
-  * [ ] Notification popups for mobile systems
-* [ ] Student details entry
+* [ ] Student details view
   * [ ] Personal details taken during admission
   * [ ] Document upload during admission
-
+* [ ] Govt. schemes posting
 
 
 
