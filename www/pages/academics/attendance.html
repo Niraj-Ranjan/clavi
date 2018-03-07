@@ -42,8 +42,8 @@
 
     <!-- ----------------------------NAVBAR----------------------------------- -->
     <nav class="fixed">
-        <div class="nav-wrapper blue darken-2">
-            <a href="#!" class="brand-logo">Attendance</a>
+        <div class="nav-wrapper blue avg-color darken-2">
+            <a href="#!" class="brand-logo"></a>
             <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <li class="waves-effect"><a href="../../home.html">Home</a></li>
@@ -71,6 +71,9 @@
                 <li class="waves-effect full-width"><a href="#" class="logout-btn">Logout</a></li>
             </ul>
         </div>
+
+
+
     </nav>
     <!-- ------------------- NAVBAR -------------------------------------------- -->
 
@@ -84,8 +87,31 @@
 
 
     <!-- -------------------- CONTENT ------------------------------------------- -->
+    <!--   <div class="full-width blue no-margin no-padding">
+        <div class="container">
+            <p>jvbda</p>
+
+            <h4 class="center">Your attendance is <span id="attendance-status">loading</span>...</h4>
+        </div>
+
+    </div>
+-->
+    <div class="card-panel avg-color blue darken-2 z-depth-1 no-margin">
+        <div class="row center">
+
+            <div class="col s12">
+                <h1 id="avg-percentage" class="light white-text center">--</h1>
+            </div>
+            <div class="col s12">
+                 <p class="center white-text flow-text">Your attendance is <span id="attendance-status">loading..</span>.</p>
+            </div>
+        </div>
+    </div>
+
+
     <div class="container">
-        <h4 class="center">Your attendance is <span id="attendance-status">loading</span>.</h4>
+
+
 
         <div id="attendance-graph-cotainer">
 
