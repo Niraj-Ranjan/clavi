@@ -7,8 +7,8 @@
   * [ ] College library books number
 * [ ] Govt. Schemes display
 * [ ] Academics display
-  * [ ] Attendance
-  * [ ] smart attendance tracker
+  * [x] Attendance
+    * [ ] Smart attendance tracker
   * [ ] Marks
   * [ ] Marks improvement notifier
   * [ ] Results

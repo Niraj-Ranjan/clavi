@@ -6,7 +6,9 @@ function getAttendance() {
     $.get(hostaddress + "/attendance", {
         username: uname
     }, function (attendancedata) {
-        var innerdata = "";
+        //var innerdata = "<div class='row'>";
+        var innerdata = "<ul class='collection full-width'>";
+        //var innerdata = "";
         var total = 0;
         var attendanceLength = 0;
 
@@ -15,18 +17,22 @@ function getAttendance() {
             var attendancevalue = attendancedata[subject];
             var subjectcolor = "";
             if (attendancevalue >= 80) {
-                subjectcolor = "#00dd00";
+                subjectcolor = "light-green accent-4";
             } else if (attendancevalue >= 60) {
-                subjectcolor = "#dddd00";
+                subjectcolor = "amber";
             } else {
-                subjectcolor = "#dd0000";
+                subjectcolor = "red";
             }
 
             /*
             innerdata = innerdata.concat("<div class='row'><div class='col s12 m3 truncate'>" + subject + "</div><div class='col s12 m9'><div class='graph-bar' style='width:" + attendancevalue + "%;background:" + subjectcolor + "'>" + attendancevalue + "%</div></div></div>");
-            */
+            *
 
             innerdata = innerdata.concat("<div class='row'><div class='col s12 m8 l6 push-m2 push-l3'><div class='card bottom-padded row hoverable'><div class='graph-bar' style='width:" + attendancevalue + "%;background:" + subjectcolor + "'></div><div class='padded'><div class='col s9  truncate flow-text'>" + subject + "</div><div class='col s3 flow-text'>" + attendancevalue + "%</div></div></div></div></div>");
+            */
+
+            innerdata = innerdata.concat("<li class='collection-item'><div class='row no-margin valign-wrapper'><div class='col s9  truncate flow-text'>" + subject + "</div><div class='col s3'><div class='btn-floating center " + subjectcolor + "'>" + attendancevalue + "</div></div></div></li>");
+
 
 
             attendanceLength++;
@@ -36,6 +42,8 @@ function getAttendance() {
         }
 
         //console.log(innerdata);
+        //innerdata = innerdata.concat("</div>");
+        innerdata = innerdata.concat("</ul>");
         document.getElementById("attendance-graph-cotainer").innerHTML = innerdata;
 
 
@@ -51,7 +59,7 @@ function getAttendance() {
         } else if (average >= 65) {
             attendanceStatus = "poor";
             $('.avg-color').removeClass("blue");
-            $('.avg-color').addClass("yellow");
+            $('.avg-color').addClass("amber");
         } else {
             attendanceStatus = "very poor";
             $('.avg-color').removeClass("blue");
