@@ -2,7 +2,7 @@
 
 
 
-var hostaddress = "https://crunchydevs.herokuapp.com";
+var hostaddress = "https://clavi.herokuapp.com";
 //const hostaddress = "http://192.168.225.68:3000";
 //var hostaddress = "http://localhost:3000";
 
