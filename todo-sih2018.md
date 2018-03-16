@@ -8,7 +8,6 @@
 * [ ] Govt. Schemes display
 * [ ] Academics display
   * [x] Attendance
-    * [ ] Smart attendance tracker
   * [ ] Marks
   * [ ] Marks improvement notifier
   * [ ] Results
