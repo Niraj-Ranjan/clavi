@@ -70,4 +70,5 @@ $("#reset-btn").click(function () {
 $(document).ready(function () {
     hideWait();
 });
+
 hideWait();
