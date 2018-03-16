@@ -2,9 +2,9 @@
 
 
 
-//var hostaddress = "https://crunchydevs.herokuapp.com";
+var hostaddress = "https://crunchydevs.herokuapp.com";
 //const hostaddress = "http://192.168.225.68:3000";
-var hostaddress = "http://localhost:3000";
+//var hostaddress = "http://localhost:3000";
 
 
 
@@ -26,15 +26,15 @@ $(document).ready(function () {
     $('.button-collapse').sideNav();
 
 
-   /* $('ul.tabs').tabs({
-        swipeable: true
-    });*/
+    /* $('ul.tabs').tabs({
+         swipeable: true
+     });*/
 
     $('ul.tabs').tabs();
     //$('.parallax').parallax();
 
     //$('.carousel.carousel-slider').carousel({
-      //  fullWidth: true
+    //  fullWidth: true
     //});
     //$('.carousel').carousel();
 
