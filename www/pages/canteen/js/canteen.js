@@ -111,8 +111,6 @@ function orderconfirm() {
 
                 bill = bill + "</tbody></table><h5 class='right'>Grand Total: " + gtotal + "</h5></div></body></html>"
 
-
-
                 document.write(bill);
 
                 //window.print(bill);
