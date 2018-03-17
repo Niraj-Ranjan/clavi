@@ -195,4 +195,14 @@ function getcanteen() {
 
 $(document).ready(function () {
     getcanteen();
+/*
+    $.getScript('socket.io.js', function () {
+        var socket = io(hostaddress);
+        socket.on('orderready', function (data) {
+            if (data.uname == Cookies.get("username")) {
+                Materialize.toast("Your " + data.item + " is ready!");
+            }
+        });
+    });
+*/
 });
