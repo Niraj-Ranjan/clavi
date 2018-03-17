@@ -83,6 +83,11 @@
             border-radius: 30px;
         }
 
+        #back-btn {
+            background: #FFFFFF;
+            color: #00bcd4;
+        }
+
         #form button:hover,
         #form button:active,
         #form button:focus {
@@ -127,27 +132,32 @@
 <body id="first">
 
 
+
+
     <!-- -------------------- CONTENT ------------------------------------------- -->
     <div class="screen-unit valign-wrapper">
         <div class="center container">
 
-            <div id="login-page">
+            <div id="signup-page">
                 <div id="form">
                     <h2 class="center">Clavi</h2>
-                    <h2 id="second">LOG IN</h2>
+                    <h2 id="second">SIGN UP</h2>
 
-                    <div class="login-form">
+                    <div class="signup-form">
+                        <p class="teal-text" style="font-size: 0.8em">
+                            Enter username and password provided by college.
+                        </p>
                         <input type="text" id="username" placeholder="username" class="validate" />
                         <input type="password" id="password" placeholder="password" class="validate" />
-                        <button id="sign-in-btn">login</button>
+                        <input type="texts" id="contact" placeholder="Contact number" class="validate" />
+                        <input type="text" id="email" placeholder="Email" class="validate" />
 
+                        <button id="sign-up-btn">submit</button>
                         <br>
-
-                        <a href="signup.html">
-                        <button  style="background: #FFFFFF; color: #00bcd4;">SIGN UP</button>
+                        <br>
+                        <a href="login.html">
+                        <button id="back-btn" style="background: #FFFFFF; color: #00bcd4;">back</button>
 </a>
-                        <br>
-                        <a class="popup" onclick="my()" href="#!">Forgot password?</a>
 
                     </div>
                 </div>
@@ -156,15 +166,10 @@
 
             <span id="user-greeter" class="hide">User</span>
 
-
-            <script>
-                function my() {
-                    alert("Your request for password reset is received. Please contact your system administrator ");
-                }
-
-            </script>
         </div>
     </div>
+
+
 
 
 
