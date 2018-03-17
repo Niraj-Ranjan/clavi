@@ -96,6 +96,28 @@ function orderconfirm() {
 
             document.getElementById("cart-items").innerHTML = "";
             orderobject = {};
+
+            if (confirm("Do you want bill?")) {
+                var bill = "<!DOCTYPE html><html><head><title>Canteen</title><link type='text/css' rel='stylesheet' href='css/materialize.css'><link type='text/css' rel='stylesheet' href='css/style.css'><script type='text/javascript' src='js/jquery-1.10.2.js'></script><script type='text/javascript' src='js/materialize.js'></script></head><body><div class='container'><table class='bordered'><h3 class='center'>" + Cookies.get("username") + "</h3><thead><tr><th>Item</th><th>Qty</th><th>Rate</th><th>Total</th></tr></thead><tbody>";
+                var gtotal = 0;
+                for (var orderobject in orderlist) {
+
+                    var elem = "<tr><td>" + orderlist[orderobject]["item"] + "</td><td>" + orderlist[orderobject]["quantity"] + "</td><td>" + orderlist[orderobject]["rate"] + "</td><td class='right'>" + orderlist[orderobject]["quantity"] * orderlist[orderobject]["rate"] + "</td></tr>";
+
+                    gtotal = gtotal + orderlist[orderobject]["quantity"] * orderlist[orderobject]["rate"];
+
+                    bill = bill + elem;
+                }
+
+                bill = bill + "</tbody></table><h5 class='right'>Grand Total: " + gtotal + "</h5></div></body></html>"
+
+
+
+                document.write(bill);
+
+                //window.print(bill);
+            }
+
             orderlist = [];
             finaltotal = 0;
             updatetotal();
@@ -195,14 +217,14 @@ function getcanteen() {
 
 $(document).ready(function () {
     getcanteen();
-/*
-    $.getScript('socket.io.js', function () {
-        var socket = io(hostaddress);
-        socket.on('orderready', function (data) {
-            if (data.uname == Cookies.get("username")) {
-                Materialize.toast("Your " + data.item + " is ready!");
-            }
+    /*
+        $.getScript('socket.io.js', function () {
+            var socket = io(hostaddress);
+            socket.on('orderready', function (data) {
+                if (data.uname == Cookies.get("username")) {
+                    Materialize.toast("Your " + data.item + " is ready!");
+                }
+            });
         });
-    });
-*/
+    */
 });
