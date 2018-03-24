@@ -88,6 +88,19 @@
 
 
 
+### College Administrative Pages
+
+* [ ] Academics post to dte servers
+  * [ ] Attendance avg
+  * [ ] Results
+* [ ] Student details view request authentication
+  * [ ] Personal details taken during admission
+  * [ ] Document upload during admission
+* [ ] Notifications and timetables posting to clg server
+
+
+
+
 
 
 
