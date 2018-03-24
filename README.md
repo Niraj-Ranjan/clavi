@@ -1,5 +1,7 @@
 # Welcome
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/krushndayshmookh/clavi.svg?token=c76eb130fbf2d861c8f6c7edc06bdef806d698b8e74de07f410967722b95c760&ts=1521905052113)](https://greenkeeper.io/)
+
 > Your academic assistant.
 
 This is an all-in-one college management app.
