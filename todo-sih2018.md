@@ -55,10 +55,10 @@
 ### App General
 
 
-* [ ] Canteen
-  * [ ] Item order form
-  * [ ] Cart page
-    * [ ] Checkout
+* [x] Canteen
+  * [x] Item order form
+  * [x] Cart page
+    * [x] Checkout
 * [ ] Forum
   * [ ] Chat room selection
   * [ ] Chat page - _currently only general chat is available. Private may or may not be added_
@@ -69,6 +69,7 @@
   * [ ] Navigation bar and Panel
   * [ ] Dashboard
   * [ ] Login interface
+    * [x] Login
     * [ ] Password recovery _Added as a popout menu in login page_
   * [ ] 404 page
 
@@ -91,7 +92,7 @@
 ### College Administrative Pages
 
 * [ ] Academics post to dte servers
-  * [ ] Attendance avg
+  * [ ] Attendance average
   * [ ] Results
 * [ ] Student details view request authentication
   * [ ] Personal details taken during admission
