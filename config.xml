@@ -11,7 +11,6 @@
     <preference name="phonegap-version" value="cli-7.0.1" />
     <preference name="DisallowOverscroll" value="true" />
     <access origin="*" />
-    <engine name="android" spec="~7.0.0" />
     <plugin name="cordova-plugin-camera" spec="~4.0.2" />
     <platform name="android">
         <icon density="ldpi" src="www/images/icons/android/mipmap-mdpi/ic_launcher.png" />
@@ -33,4 +32,5 @@
         <splash density="port-xxhdpi" src="www/images/screens/android/screen-xxhdpi-portrait.png" />
         <splash density="port-xxxhdpi" src="www/images/screens/android/screen-xxxhdpi-portrait.png" />
     </platform>
+    <engine name="android" spec="~7.0.0" />
 </widget>

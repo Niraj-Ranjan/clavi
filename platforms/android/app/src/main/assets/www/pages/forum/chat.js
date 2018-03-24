@@ -208,14 +208,14 @@ $(function () {
         }
     });
 
-   /* function sendPressed() {
+    function sendPressed() {
         if (username) {
             sendMessage();
             socket.emit('stop typing');
             typing = false;
         }
     }
-*
+
     $inputMessage.on('input', function () {
         updateTyping();
     });
