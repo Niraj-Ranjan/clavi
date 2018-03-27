@@ -124,7 +124,14 @@ nav .nav-wrapper .side-nav li a {
 }
 
 .blue-gradient {
-    background: linear-gradient(to right, #4527a0, #f50057);
+    /*background: linear-gradient(to right, #4527a0, #f50057);*/
+    background: #ffffff;
+
+}
+
+nav {
+
+    box-shadow: none;
 }
 
 nav .nav-wrapper .side-nav li a {
