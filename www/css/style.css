@@ -178,6 +178,15 @@ ul.side-nav {
     background: linear-gradient(45deg, #FF8664, #FF4265);
 }
 
+.vanusa-gradient {
+    background: #DA4453;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #89216B, #DA4453);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #89216B, #DA4453);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 nav {
     box-shadow: none;
 }
@@ -214,4 +223,29 @@ nav .nav-wrapper .side-nav li a {
 
 .brand-logo {
     font-weight: 400;
+}
+
+.circle-highlight {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #FF397F;
+    color: #ffffff;
+    margin: 2px;
+}
+
+/*
+#marks-table-container li.active {
+    background: #DA4453;
+    /* fallback for old browsers *
+    background: -webkit-linear-gradient(to right, #89216B, #DA4453);
+    /* Chrome 10-25, Safari 5.1-6 *
+    background: linear-gradient(to right, #89216B, #DA4453);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *
+    color: #FFFFFF;
+}
+*/
+
+#marks-table-container li .collapsible-header {
+    background: transparent;
 }

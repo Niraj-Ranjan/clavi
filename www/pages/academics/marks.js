@@ -13,18 +13,23 @@ function getAcademics() {
 
         for (var subject in academicsdata) {
 
-            var innerDataStart = "<div class='one-subject row'><p><span class='strong'>" + subject + "</span> - " + academicsdata[subject].teacher + "</p><table class='centered'><thead><tr><td colspan='7' class='center'>TAE</td><td colspan='3' class='center'>CAE</td><td class='center'>ESE</td><td class='center'>Total</td></tr><tbody><tr>";
+
+            var innerDataStart = "<li class='rounded'><div class='collapsible-header'><div class='truncate flow-text'>" + subject + "</div></div><div class='collapsible-body hidden-overflow'>";
 
             var innerDataMiddle = "";
             totalMarks = 0;
             for (var type in academicsdata[subject].marks) {
+                innerDataMiddle = innerDataMiddle.concat("<div class='row valign-wrapper'><div class='col s1'>" + type.toUpperCase() + "</div><div class='col s11'><ol>");
                 for (var mark in academicsdata[subject].marks[type]) {
-                    innerDataMiddle = innerDataMiddle.concat("<td>" + academicsdata[subject].marks[type][mark] + "</td>");
-                    totalMarks = totalMarks + academicsdata[subject].marks[type][mark];
+                    innerDataMiddle = innerDataMiddle.concat("<li style='display: inline-block;'><div class='circle-highlight valign-wrapper'><div class='container center'>" + academicsdata[subject].marks[type][mark] + "</div></div></li>");
+
+                    //totalMarks = totalMarks + academicsdata[subject].marks[type][mark];
                 }
+                innerDataMiddle = innerDataMiddle.concat("</ol></div></div>");
             }
-            innerDataMiddle = innerDataMiddle.concat("<td>" + totalMarks + "</td>");
-            var innerDataEnd = "</tr></tbody></thead></table></div>";
+            //innerDataMiddle = innerDataMiddle.concat("<div class='row'>total<div class='circle-highlight valign-wrapper'><div class='container center'>" + totalMarks + "</div></div></div>");
+            innerDataMiddle = innerDataMiddle.concat("</div>");
+            var innerDataEnd = "</li>";
             var innerdata = innerDataStart + innerDataMiddle + innerDataEnd;
             finalinnerdata = finalinnerdata.concat(innerdata);
         }
@@ -44,4 +49,11 @@ function getAcademics() {
 
 $(document).ready(function () {
     getAcademics();
+
+    $('select').formSelect();
+
+    $('.collapsible').collapsible({
+        accordion: false
+    });
+
 });
