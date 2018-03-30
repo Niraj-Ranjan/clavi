@@ -30,7 +30,7 @@ $("#sign-in-btn").click(function () {
                     expires: 7,
                     path: '/'
                 });
-                window.location = "../home.html";
+                window.location = "../pages/profile/index.html";
 
 
             } else {
