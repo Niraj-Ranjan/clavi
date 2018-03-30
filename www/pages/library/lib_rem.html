@@ -4,7 +4,7 @@
 <head>
 
 
-    <title>Marks</title>
+    <title>About</title>
 
     <!-- -------------------- META ------------------------------------------- -->
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
@@ -22,12 +22,6 @@
     <script type="text/javascript" src="../../js/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="../../js/materialize.js"></script>
     <script type="text/javascript" src="../../js/js.cookie.js"></script>
-    <script>
-        if (Cookies.get('username') == undefined) {
-            window.location = "../login.html";
-        }
-
-    </script>
 
 
 </head>
@@ -43,7 +37,7 @@
     <!-- ----------------------------NAVBAR----------------------------------- -->
     <nav class="fixed">
         <div class="nav-wrapper blue darken-2">
-            <a href="#!" class="brand-logo">Marks</a>
+            <a href="#!" class="brand-logo">About</a>
             <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <li class="waves-effect"><a href="../../home.html">Home</a></li>
@@ -52,8 +46,8 @@
                 <li class="waves-effect"><a href="../canteen/index.html">Canteen</a></li>
                 <li class="waves-effect"><a href="../forum/index.html">Forum</a></li>
 
+                <li class="waves-effect"><a href="#!">Book Reminder</a></li>
                 <li class="waves-effect"><a href="../about.html">About</a></li>
-
                 <li class="waves-effect"><a href="#" class="logout-btn">Logout</a></li>
             </ul>
             <ul class="side-nav" id="mobile-menu">
@@ -61,16 +55,14 @@
                 <li class="side-nav-header full-width center"><img src="http://localhost:3000/images/student.png" alt="img" style="max-height: 90px"></li>
                 <li class="side-nav-header full-width center"> <a href="#"><span id="user-greeter" style="font-size: 1.5em; font-weight: 300; color: white">User</span></a> </li>
 
-
-
                 <li class="waves-effect full-width"><a href="../../home.html">Home</a></li>
                 <li class="waves-effect full-width"><a href="../profile/index.html">Profile</a></li>
                 <li class="waves-effect full-width"><a href="../academics/index.html">Academics</a></li>
                 <li class="waves-effect full-width"><a href="../canteen/index.html">Canteen</a></li>
                 <li class="waves-effect full-width"><a href="../forum/index.html">Forum</a></li>
 
+                <li class="waves-effect full-width"><a href="#!">Book Reminder</a></li>
                 <li class="waves-effect full-width"><a href="../about.html">About</a></li>
-
                 <li class="waves-effect full-width"><a href="#" class="logout-btn">Logout</a></li>
             </ul>
         </div>
@@ -87,19 +79,28 @@
 
 
     <!-- -------------------- CONTENT ------------------------------------------- -->
+
+
+
+
+
+
+
     <div class="container">
-        <h4 class="center">Your performance</h4>
+        <h4 class="center">Your books</h4>
 
-        <div id="marks-table-container">
+        <ul id="book-list-container" class="collection">
 
-            <p class="center">Loading</p>
+        </ul>
 
-
-        </div>
+        <h4 id="fine" class="hidden">Fine: Rs. 36</h4>
     </div>
+
+
+
+
+
     <!-- -------------------- CONTENT ------------------------------------------- -->
-
-
 
 
 
@@ -119,9 +120,8 @@
 
 
     <script type="text/javascript" src="../../js/script.js" id="global-script"></script>
-    <script type="text/javascript" src="marks.js"></script>
 
-
+    <script src="lib_rem.js"></script>
 
 
 

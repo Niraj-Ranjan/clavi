@@ -2,9 +2,10 @@
 
 
 
-var hostaddress = "http://clavi.herokuapp.com";
-//const hostaddress = "http://192.168.225.68:3000";
-//const hostaddress = "http://localhost:3000";
+//var hostaddress = "http://clavi.herokuapp.com";
+//const hostaddress = "http://192.168.225.240:3000";
+const hostaddress = "http://localhost:3000";
+//const hostaddress = "http://10.20.30.188:3000";
 
 
 
