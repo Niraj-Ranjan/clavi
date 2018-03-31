@@ -178,6 +178,15 @@ ul.side-nav {
     background: linear-gradient(45deg, #FF8664, #FF4265);
 }
 
+.green-gradient {
+    background: linear-gradient(to right, #45a247, #56ab2f);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.hydrogen-gradient {
+    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
 .vanusa-gradient {
     background: #DA4453;
     /* fallback for old browsers */
@@ -234,17 +243,7 @@ nav .nav-wrapper .side-nav li a {
     margin: 2px;
 }
 
-/*
-#marks-table-container li.active {
-    background: #DA4453;
-    /* fallback for old browsers *
-    background: -webkit-linear-gradient(to right, #89216B, #DA4453);
-    /* Chrome 10-25, Safari 5.1-6 *
-    background: linear-gradient(to right, #89216B, #DA4453);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *
-    color: #FFFFFF;
-}
-*/
+
 
 #marks-table-container li .collapsible-header {
     background: transparent;
